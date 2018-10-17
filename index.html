@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ja" data-ember-extension="1">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
+
+    <title>chuta2323's Labs.</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <style type='text/css'>
+    </style>
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+</head>
+
+<body data-ember-extension="1">
+
+    <div class="container">
+
+        <!-- Static navbar -->
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="#">Project name</a>
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active">
+                            <a href="#">Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li>
+                            <a href="#">Link</a>
+                        </li>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown
+                                <b class="caret"></b>
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a href="#">Action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Another action</a>
+                                </li>
+                                <li>
+                                    <a href="#">Something else here</a>
+                                </li>
+                                <li class="divider"></li>
+                                <li class="dropdown-header">Nav header</li>
+                                <li>
+                                    <a href="#">Separated link</a>
+                                </li>
+                                <li>
+                                    <a href="#">One more separated link</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <!--/.nav-collapse -->
+            </div>
+            <!--/.container-fluid -->
+        </div>
+
+        <!-- Main component for a primary marketing message or call to action -->
+        <div class="jumbotron accbox">
+            <section>
+                <p>冷静</p>
+                <li>
+                    <label name="機械精通" onclick="alert('調整発生時の判定範囲が10%増加する。');">機械精通(0)</label>
+                    <input type="range" id="level" min="0" max="1" value="0" />
+                </li>
+                <ul>
+                    <li>
+                        <label name="好奇心" onclick="alert('ゲーム開始時、一番近くにある暗号機2台を10秒間表示する。');">好奇心(0)</label>
+                        <input type="range" id="level" min="0" max="1" value="0" />
+                    </li>
+                    <li>
+                        <label name="不安" onclick="alert('しゃがんで移動する時の速度が40%上昇する。');">不安(0)</label>
+                        <input type="range" id="level" min="0" max="1" value="0" />
+                    </li>
+                    <ul>
+                        <li>
+                            <label name="雲の中で散歩" onclick="alert('足跡が残る時間が1/1.5/2秒減少する。');">雲の中で散歩(0)</label>
+                            <input type="range" id="level" min="0" max="3" value="0" />
+                        </li>
+                        <li>
+                            <label name="癒合" onclick="alert('負傷状態の治療時間が10%/15%/20%減少する。');">癒合(0)</label>
+                            <input type="range" id="level" min="0" max="3" value="0" />
+                        </li>
+                    </ul>
+                    <li>
+                        <label name="不撓不屈" onclick="alert('ダウンした後の自己治癒速度が10%上昇し、ダウン状態の移動速度が50%/75%/100%上昇する。');">不撓不屈(0)</label>
+                        <input type="range" id="level" min="0" max="3" value="0" />
+                    </li>
+                    <ul>
+                        <li>
+                            <label name="ホーソン効果" onclick="alert('他のサバイバーが5メートル以内にいる時、仲間1人につき、プレイヤー自身の解読・治療・破壊行動の速度が3%/3.5%/4%上昇する。');">ホーソン効果(0)</label>
+                            <input type="range" id="level" min="0" max="3" value="0" />
+                        </li>
+                        <ul>
+                            <li>
+                                <label name="傍観者" onclick="alert('他の人を治療する速度が20%上昇し、かつ負傷したサバイバーが表示される。ただし、サバイバーが風船に縛られている時は表示されない。');">傍観者(0)</label>
+                                <input type="range" id="level" min="0" max="1" value="0" />
+                            </li>
+                        </ul>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <p>勇敢</p>
+                <li>
+                    <label name="火中の栗" onclick="alert('ロケットチェアから救出する速度が40%上昇する。');">火中の栗(0)</label>
+                    <input type="range" id="level" min="0" max="1" value="0" />
+                </li>
+                <ul>
+                    <li>
+                        <label name="起死回生" onclick="alert('1試合中1回だけ、ダウン中に自己治癒で負傷状態まで回復できる。');">起死回生(0)</label>
+                        <input type="range" id="level" min="0" max="1" value="0" />
+                    </li>
+                    <li>
+                        <label name="囚人ジレンマ" onclick="alert('他のプレイヤーが風船に縛られている時、ハンターとそのプレイヤーの位置を5秒間表示する。ロケットチェアに拘束したあとは表示が消える。');">囚人ジレンマ(0)</label>
+                        <input type="range" id="level" min="0" max="1" value="0" />
+                    </li>
+                    <ul>
+                        <li>
+                            <label name="生存の意志" onclick="alert('風船に縛られた時の抵抗速度が5%/10%/15%上昇する。');">生存の意志(0)</label>
+                            <input type="range" id="level" min="0" max="3" value="0" />
+                        </li>
+                        <li>
+                            <label name="怪力" onclick="alert('ハンターを気絶させた際の回復速度が10%/15%/20%低下する。');">怪力(0)</label>
+                            <input type="range" id="level" min="0" max="3" value="0" />
+                        </li>
+                    </ul>
+                    <li>
+                        <label name="反面教師" onclick="alert('他のサバイバーがロケットチェアに拘束されている半径12/18/24メートル以内で、プレイヤー自身の移動速度が4%/6%/8%上昇する。');">反面教師(0)</label>
+                        <input type="range" id="level" min="0" max="3" value="0" />
+                    </li>
+                    <ul>
+                        <li>
+                            <label name="膝蓋腱反射" onclick="alert('板を乗り越えると、移動速度が30%/40%/50%上昇する。効果時間は3秒間で、クールタイムは60/50/40秒。');">膝蓋腱反射(0)</label>
+                            <input type="range" id="level" min="0" max="3" value="0" />
+                        </li>
+                        <ul>
+                            <li>
+                                <label name="割れ窓理論" onclick="alert('窓を乗り越えると、移動速度が50%上昇する。効果時間は3秒間で、クールタイムは40秒。');">割れ窓理論(0)</label>
+                                <input type="range" id="level" min="0" max="1" value="0" />
+                            </li>
+                        </ul>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <p>友好</p>
+                <li>
+                    <label name="吊り橋効果" onclick="alert('18メートル以内にいるサバイバーを表示する。');">吊り橋効果(0)</label>
+                    <input type="range" id="level" min="0" max="1" value="0" />
+                </li>
+                <ul>
+                    <li>
+                        <label name="受難" onclick="alert('自身がロケットチェアに拘束されている時、他のサバイバーが互いに見えるようになる。');">受難(0)</label>
+                        <input type="range" id="level" min="0" max="1" value="0" />
+                    </li>
+                    <li>
+                        <label name="かすかな音" onclick="alert('他のサバイバーがロケットチェアに拘束されている半径18メートル以内では、走っても足跡が残らなくなる。');">かすかな音(0)</label>
+                        <input type="range" id="level" min="0" max="1" value="0" />
+                    </li>
+                    <ul>
+                        <li>
+                            <label name="避難所" onclick="alert('ロケットチェアからサバイバーを救出するたびに、治療速度が20％/30％/40%上昇する。持続時間は60/90/120秒間で、効果は重ねがけすることができる。');">避難所(0)</label>
+                            <input type="range" id="level" min="0" max="3" value="0" />
+                        </li>
+                        <li>
+                            <label name="医師" onclick="alert('治療速度が15％/20％/25%上昇する。');">医師(0)</label>
+                            <input type="range" id="level" min="0" max="3" value="0" />
+                        </li>
+                    </ul>
+                    <li>
+                        <label name="ナマズ効果" onclick="alert('自身がロケットチェアに拘束されている時、半径12/18/24メートル以内にいる他のサバイバーの移動速度が4%/6%/8%上昇する。');">ナマズ効果(0)</label>
+                        <input type="range" id="level" min="0" max="3" value="0" />
+                    </li>
+                    <ul>
+                        <li>
+                            <label name="羊の群れ" onclick="alert('他のサバイバーが5メートル以内にいる時、範囲内の仲間の解読・治療・破壊行動の速度が3％/5％/7%上昇する。');">羊の群れ(0)</label>
+                            <input type="range" id="level" min="0" max="3" value="0" />
+                        </li>
+                        <ul>
+                            <li>
+                                <label name="危機一髪" onclick="alert('1試合中1回だけ、仲間をロケットチェアから救出すると、自身とその仲間が20秒間無敵になる。その間に攻撃を受けてもダウンはしないが、効果が切れたタイミングでダメージが発生する。');">危機一髪(0)</label>
+                                <input type="range" id="level" min="0" max="1" value="0" />
+                            </li>
+                        </ul>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <p>執着</p>
+                <li>
+                    <label name="強迫神経症" onclick="alert('16メートル以内の箱を表示する。');">強迫神経症(0)</label>
+                    <input type="range" id="level" min="0" max="1" value="0" />
+                </li>
+                <ul>
+                    <li>
+                        <label name="寒気" onclick="alert('36メートル以内のハンターがあなたを見ている時、ハンターの方向を赤い矢印で表示する。');">寒気(0)</label>
+                        <input type="range" id="level" min="0" max="1" value="0" />
+                    </li>
+                    <li>
+                        <label name="気が散る" onclick="alert('暗号機を5つ解読すると、ハンターの位置を5秒間表示する。');">気が散る(0)</label>
+                        <input type="range" id="level" min="0" max="1" value="0" />
+                    </li>
+                    <ul>
+                        <li>
+                            <label name="自らを欺く" onclick="alert('暗号機の調整に失敗した際、50%/75%/100%の確率でハンターに通知が届かなくなる。');">自らを欺く(0)</label>
+                            <input type="range" id="level" min="0" max="3" value="0" />
+                        </li>
+                        <li>
+                            <label name="うたた寝" onclick="alert('ロケットチェア発射までのカウントダウンが3%/6%/9%低下する。');">うたた寝(0)</label>
+                            <input type="range" id="level" min="0" max="3" value="0" />
+                        </li>
+                    </ul>
+                    <li>
+                        <label name="逃避" onclick="alert('暗号機を5つ解読すると120秒間、移動速度が4%/6%/8%上昇する。');">逃避(0)</label>
+                        <input type="range" id="level" min="0" max="3" value="0" />
+                    </li>
+                    <ul>
+                        <li>
+                            <label name="転禍為福" onclick="alert('誰かが暗号機の調整に失敗した場合、ハンターの位置を3/5/7秒間表示する。');">転禍為福(0)</label>
+                            <input type="range" id="level" min="0" max="3" value="0" />
+                        </li>
+                        <ul>
+                            <li>
+                                <label name="中治り" onclick="alert('暗号機を5つ解読すると即座に1段階治療され、5秒間の間移動速度が50%上昇する。');">中治り(0)</label>
+                                <input type="range" id="level" min="0" max="1" value="0" />
+                            </li>
+                        </ul>
+                    </ul>
+                </ul>
+            </section>
+
+            <section>
+                <strong id='skill_pt'>[スキル合計: 0 pt]</strong><br />
+                <em id='skill_list'></em>
+            </section>
+        </div>
+        <!-- /container -->
+
+
+        <!-- Bootstrap core JavaScript
+================================================== -->
+        <!-- Placed at the end of the document so the pages load faster -->
+        <script src='https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js'></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+        <script type="text/javascript" src="chrome-extension://bmdblncegkenkacieihfhpjfppoconhi/in-page-script.js"></script>
+
+        <script type="text/javascript">
+            /* Renew simulation result */
+            var renew_sim_res = function () {
+                var skill_pt = 0;
+                var skill_list = '';
+
+                $('input[type=range]').each(function () {
+                    skill_pt += parseFloat($(this).val());
+                    if ($(this).val() > 0) {
+                        skill_list += $(this).prev().text() + ', ';
+                    }
+                });
+                $('#skill_pt').text('[スキル合計: ' + skill_pt + ' pt]');
+                $('#skill_list').text(skill_list);
+            };
+
+            /* Range changing */
+            $('input[type=range]').on('input', function () {
+                var rewrt = $(this).prev().attr("name") + '(' + $(this).val() + ')';
+                $(this).prev().text(rewrt);
+
+                if($(this).val() > 0){
+                    // $(this).().find('input[type=range]');
+                }
+
+                renew_sim_res();
+            });
+
+            /* Range changed */
+            $('input[type=range]').change(function () {
+                var rewrt = $(this).prev().attr("name") + '(' + $(this).val() + ')';
+                $(this).prev().text(rewrt);
+
+                renew_sim_res();
+            });
+        </script>
+</body>
+
+</html>
